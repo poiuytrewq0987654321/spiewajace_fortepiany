@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    margin-top:100px;
+}
+
+.main {
+    margin-top: 50px;
+    width:16%;
+    height: 250px;
+    line-height: 250px;;
+    float:left;
+    font-size: 2.5rem;
+    margin-right: 6px;
+    border: 1px solid black;
+    text-align: center;
+    overflow: auto;
+    cursor: pointer;
+    color:white;
+}
+
+.main-clicked {
+    color:black;
+}
+
+button{
+    margin-top:50px;
+}
