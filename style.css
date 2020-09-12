@@ -1,27 +1,84 @@
-h1{
+html {
+    background-color:black;
+    color: white;
+}
+
+h1 {
     text-align: center;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 .main {
     margin-top: 50px;
-    width:16%;
+    width: 16%;
     height: 250px;
-    line-height: 250px;;
-    float:left;
+    line-height: 250px;
+    ;
+    float: left;
     font-size: 2.5rem;
     margin-right: 6px;
     border: 1px solid black;
     text-align: center;
     overflow: auto;
     cursor: pointer;
-    color:white;
+    color: white;
+    background-color: white;
 }
 
 .main-clicked {
-    color:black;
+    color: black;
 }
 
-button{
-    margin-top:50px;
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+.popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+}
+
+.popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: 1rem;
+    font-size: 1rem;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #666666;
+}
+
+input {
+    height:2.5 rem;
+    width: 4.5 rem;
+    display:block;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top:10px;
+}
+
+button:hover {
+    border: 1px solid #666666;
+    background: #666666;
+    color: #ffffff;
 }

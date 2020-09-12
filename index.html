@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Śpiewające fortepiany</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
+
 <body>
 
-    <button>nowa gra</button>
+    <button class="open">nowa gra</button>
+
+    <!--Creates the popup body-->
+    <div class="popup-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-content">
+            <h2>Nowa gra</h2>
+            <input class="slowo" id="slowo1" type="text">
+            <input class="slowo" id="slowo2" type="text">
+            <input class="slowo" id="slowo3" type="text">
+            <input class="slowo" id="slowo4" type="text">
+            <input class="slowo" id="slowo5" type="text">
+            <input class="slowo" id="slowo6" type="text">
+            <button class="dodaj">Dodaj</button>
+            <!--popup's close button-->
+            <br>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
     <br>
     <h1>Śpiewające fortepiany</h1>
 
-    <div class="main">ofiaruję</div>
-    <div class="main">swojej</div>
-    <div class="main">dziewczynie</div>
-    <div class="main">wszystkie</div>
-    <div class="main">kwiaty</div>
-    <div class="main">holandii</div>
-
-    
+    <div class="main" id="div1"></div>
+    <div class="main" id="div2"></div>
+    <div class="main" id="div3"></div>
+    <div class="main" id="div4"></div>
+    <div class="main" id="div5"></div>
+    <div class="main" id="div6"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
